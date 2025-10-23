@@ -137,6 +137,14 @@ input[type="email"].invalid {
   color: #64748b;
 }
 
+.footnote a {
+  color: #0ea5e9; /* sky-500 */
+}
+
+.footnote a:hover {
+  color: #0284c7; /* sky-600 */
+}
+
 .hidden {
   display: none;
 }
