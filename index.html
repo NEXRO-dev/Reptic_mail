@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reptic 外部テスター登録</title>
+  <meta name="description" content="Reptic の外部テスター募集。メールアドレスを登録してください。">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main class="container">
+    <section class="card" role="region" aria-labelledby="title">
+      <img src="./reptic-icon.jpg" alt="Reptic アイコン" class="brand-icon" width="64" height="64" decoding="async">
+      <h1 id="title" class="title">Reptic 外部テスター登録</h1>
+      <p class="subtitle">最新のテスト招待やお知らせをメールでお送りします。</p>
+      <form id="signupForm" method="POST" target="submission_frame" novalidate>
+        <div class="form-row">
+          <label for="email">メールアドレス</label>
+          <input id="email" name="email" type="email" inputmode="email" autocomplete="email" required placeholder="you@example.com" aria-describedby="emailHelp">
+          <div id="emailHelp" class="help">会社/個人どちらでもOKです</div>
+        </div>
+        <button id="submitBtn" type="submit" class="button" disabled>登録する</button>
+        <div id="status" role="status" aria-live="polite" class="status" aria-atomic="true"></div>
+      </form>
+      <p class="footnote">登録により、<a href="#" target="_blank" rel="noopener">プライバシーポリシー</a>に同意したものとみなします。</p>
+    </section>
+  </main>
+
+  <iframe name="submission_frame" id="submission_frame" title="submission" class="hidden" tabindex="-1"></iframe>
+
+  <script src="./script.js"></script>
+  <noscript>
+    JavaScript を有効にしてから再度お試しください。
+  </noscript>
+</body>
+<!--
+  注意: 送信先 URL は script.js の GAS_WEB_APP_URL を設定してください。
+  このフォームは hidden iframe に POST することで CORS 問題を回避しています。
+-->
+</html>
+
