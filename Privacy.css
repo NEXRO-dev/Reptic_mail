@@ -73,6 +73,31 @@ body {
   line-height: 1.8;
 }
 
+.notice {
+  border-left: 4px solid #0ea5e9; /* sky-500 */
+  background: rgba(14, 165, 233, 0.08);
+  padding: 10px 12px;
+  border-radius: 8px;
+  color: #0c4a6e; /* slate-800-ish for readability */
+}
+
+.notice a {
+  color: #0284c7; /* sky-600 */
+  text-decoration: underline;
+}
+
+.notice a:hover {
+  color: #0369a1; /* sky-700 */
+}
+
+.accent-link {
+  color: #0ea5e9; /* sky-500 */
+}
+
+.accent-link:hover {
+  color: #0284c7; /* sky-600 */
+}
+
 .footer {
   margin-top: 24px;
 }
